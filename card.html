@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>CARD CHECK HTML PAGE </title>
+
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+
+<body>
+
+    <form onsubmit="return false">
+        <label for="firstcard">Choose firstcard:</label>
+        <select name="firstcard" id="firstcard">firstcard
+            <option value="17">heart of 2</option>
+            <option value="21">heart of 3</option>
+            <option value="25">heart of 4</option>
+            <option value="29">heart of 5</option>
+            <option value="33">heart of 6</option>
+            <option value="37">heart of 7</option>
+            <option value="41">heart of 8</option>
+            <option value="45">heart of 9</option>
+            <option value="49">heart of 10</option>
+            <option value="13">heart of Jack</option>
+            <option value="9">heart of queen</option>
+            <option value="5">heart of king</option>
+            <option value="1">heart of Ace</option>
+            <option value="18">club of 2</option>
+            <option value="22">club of 3</option>
+            <option value="26">club of 4</option>
+            <option value="30">club of 5</option>
+            <option value="34">club of 6</option>
+            <option value="38">club of 7</option>
+            <option value="42">club of 8</option>
+            <option value="46">club of 9</option>
+            <option value="50">club of 10</option>
+            <option value="14">club of Jack</option>
+            <option value="10">club of queen</option>
+            <option value="6">club of king</option>
+            <option value="2">club of Ace</option>
+            <option value="19">spade of 2</option>
+            <option value="23">spade of 3</option>
+            <option value="27">spade of 4</option>
+            <option value="31">spade of 5</option>
+            <option value="35">spade of 6</option>
+            <option value="39">spade of 7</option>
+            <option value="43">spade of 8</option>
+            <option value="47">spade of 9</option>
+            <option value="51">spade of 10</option>
+            <option value="15">spade of Jack</option>
+            <option value="11">spade of queen</option>
+            <option value="7">spade of king</option>
+            <option value="3">spade of Ace</option>
+            <option value="20">diamond of 2</option>
+            <option value="24">diamond of 3</option>
+            <option value="28">diamond of 4</option>
+            <option value="32">diamond of 5</option>
+            <option value="36">diamond of 6</option>
+            <option value="40">diamond of 7</option>
+            <option value="44">diamond of 8</option>
+            <option value="48">diamond of 9</option>
+            <option value="52">diamond of 10</option>
+            <option value="16">diamond of Jack</option>
+            <option value="12">diamond of queen</option>
+            <option value="8">diamond of king</option>
+            <option value="4">diamond of Ace</option>
+            <!-- <option value="jo1">joker</option>
+            <option value="jo2">joker</option> -->
+        </select>
+
+        <label for="secondcard">Choose secondcard</label>
+        <select name="secondcard" id="secondcard">secondcard
+            <option value="17">heart of 2</option>
+            <option value="21">heart of 3</option>
+            <option value="25">heart of 4</option>
+            <option value="29">heart of 5</option>
+            <option value="33">heart of 6</option>
+            <option value="37">heart of 7</option>
+            <option value="41">heart of 8</option>
+            <option value="45">heart of 9</option>
+            <option value="49">heart of 10</option>
+            <option value="13">heart of Jack</option>
+            <option value="9">heart of queen</option>
+            <option value="5">heart of king</option>
+            <option value="1">heart of Ace</option>
+            <option value="18">club of 2</option>
+            <option value="22">club of 3</option>
+            <option value="26">club of 4</option>
+            <option value="30">club of 5</option>
+            <option value="34">club of 6</option>
+            <option value="38">club of 7</option>
+            <option value="42">club of 8</option>
+            <option value="46">club of 9</option>
+            <option value="50">club of 10</option>
+            <option value="14">club of Jack</option>
+            <option value="10">club of queen</option>
+            <option value="6">club of king</option>
+            <option value="2">club of Ace</option>
+            <option value="19">spade of 2</option>
+            <option value="23">spade of 3</option>
+            <option value="27">spade of 4</option>
+            <option value="31">spade of 5</option>
+            <option value="35">spade of 6</option>
+            <option value="39">spade of 7</option>
+            <option value="43">spade of 8</option>
+            <option value="47">spade of 9</option>
+            <option value="51">spade of 10</option>
+            <option value="15">spade of Jack</option>
+            <option value="11">spade of queen</option>
+            <option value="7">spade of king</option>
+            <option value="3">spade of Ace</option>
+            <option value="20">diamond of 2</option>
+            <option value="24">diamond of 3</option>
+            <option value="28">diamond of 4</option>
+            <option value="32">diamond of 5</option>
+            <option value="36">diamond of 6</option>
+            <option value="40">diamond of 7</option>
+            <option value="44">diamond of 8</option>
+            <option value="48">diamond of 9</option>
+            <option value="52">diamond of 10</option>
+            <option value="16">diamond of Jack</option>
+            <option value="12">diamond of queen</option>
+            <option value="8">diamond of king</option>
+            <option value="4">diamond of Ace</option>
+            <!-- <option value="jo1">joker</option>
+            <option value="jo2">joker</option> -->
+        </select>
+
+        <label for="thirdcard">Choose thirdcard:</label>
+        <select name="thirdcard" id="thirdcard">
+            <option value="17">heart of 2</option>
+            <option value="21">heart of 3</option>
+            <option value="25">heart of 4</option>
+            <option value="29">heart of 5</option>
+            <option value="33">heart of 6</option>
+            <option value="37">heart of 7</option>
+            <option value="41">heart of 8</option>
+            <option value="45">heart of 9</option>
+            <option value="49">heart of 10</option>
+            <option value="13">heart of Jack</option>
+            <option value="9">heart of queen</option>
+            <option value="5">heart of king</option>
+            <option value="1">heart of Ace</option>
+            <option value="18">club of 2</option>
+            <option value="22">club of 3</option>
+            <option value="26">club of 4</option>
+            <option value="30">club of 5</option>
+            <option value="34">club of 6</option>
+            <option value="38">club of 7</option>
+            <option value="42">club of 8</option>
+            <option value="46">club of 9</option>
+            <option value="50">club of 10</option>
+            <option value="14">club of Jack</option>
+            <option value="10">club of queen</option>
+            <option value="6">club of king</option>
+            <option value="2">club of Ace</option>
+            <option value="19">spade of 2</option>
+            <option value="23">spade of 3</option>
+            <option value="27">spade of 4</option>
+            <option value="31">spade of 5</option>
+            <option value="35">spade of 6</option>
+            <option value="39">spade of 7</option>
+            <option value="43">spade of 8</option>
+            <option value="47">spade of 9</option>
+            <option value="51">spade of 10</option>
+            <option value="15">spade of Jack</option>
+            <option value="11">spade of queen</option>
+            <option value="7">spade of king</option>
+            <option value="3">spade of Ace</option>
+            <option value="20">diamond of 2</option>
+            <option value="24">diamond of 3</option>
+            <option value="28">diamond of 4</option>
+            <option value="32">diamond of 5</option>
+            <option value="36">diamond of 6</option>
+            <option value="40">diamond of 7</option>
+            <option value="44">diamond of 8</option>
+            <option value="48">diamond of 9</option>
+            <option value="52">diamond of 10</option>
+            <option value="16">diamond of Jack</option>
+            <option value="12">diamond of queen</option>
+            <option value="8">diamond of king</option>
+            <option value="4">diamond of Ace</option>
+            <!-- <option value="jo1">joker</option>
+            <option value="jo2">joker</option> -->
+        </select>
+
+        <label for="forthcard">Choose forthcard:</label>
+        <select name="forthcard" id="forthcard">
+            <option value="17">heart of 2</option>
+            <option value="21">heart of 3</option>
+            <option value="25">heart of 4</option>
+            <option value="29">heart of 5</option>
+            <option value="33">heart of 6</option>
+            <option value="37">heart of 7</option>
+            <option value="41">heart of 8</option>
+            <option value="45">heart of 9</option>
+            <option value="49">heart of 10</option>
+            <option value="13">heart of Jack</option>
+            <option value="9">heart of queen</option>
+            <option value="5">heart of king</option>
+            <option value="1">heart of Ace</option>
+            <option value="18">club of 2</option>
+            <option value="22">club of 3</option>
+            <option value="26">club of 4</option>
+            <option value="30">club of 5</option>
+            <option value="34">club of 6</option>
+            <option value="38">club of 7</option>
+            <option value="42">club of 8</option>
+            <option value="46">club of 9</option>
+            <option value="50">club of 10</option>
+            <option value="14">club of Jack</option>
+            <option value="10">club of queen</option>
+            <option value="6">club of king</option>
+            <option value="2">club of Ace</option>
+            <option value="19">spade of 2</option>
+            <option value="23">spade of 3</option>
+            <option value="27">spade of 4</option>
+            <option value="31">spade of 5</option>
+            <option value="35">spade of 6</option>
+            <option value="39">spade of 7</option>
+            <option value="43">spade of 8</option>
+            <option value="47">spade of 9</option>
+            <option value="51">spade of 10</option>
+            <option value="15">spade of Jack</option>
+            <option value="11">spade of queen</option>
+            <option value="7">spade of king</option>
+            <option value="3">spade of Ace</option>
+            <option value="20">diamond of 2</option>
+            <option value="24">diamond of 3</option>
+            <option value="28">diamond of 4</option>
+            <option value="32">diamond of 5</option>
+            <option value="36">diamond of 6</option>
+            <option value="40">diamond of 7</option>
+            <option value="44">diamond of 8</option>
+            <option value="48">diamond of 9</option>
+            <option value="52">diamond of 10</option>
+            <option value="16">diamond of Jack</option>
+            <option value="12">diamond of queen</option>
+            <option value="8">diamond of king</option>
+            <option value="4">diamond of Ace</option>
+            <!-- <option value="jo1">joker</option>
+            <option value="jo2">joker</option> -->
+        </select>
+
+        <label for="fifthcard">Choose fifthcard:</label>
+        <select name="fifthcard" id="fifthcard">
+            <option value="17">heart of 2</option>
+            <option value="21">heart of 3</option>
+            <option value="25">heart of 4</option>
+            <option value="29">heart of 5</option>
+            <option value="33">heart of 6</option>
+            <option value="37">heart of 7</option>
+            <option value="41">heart of 8</option>
+            <option value="45">heart of 9</option>
+            <option value="49">heart of 10</option>
+            <option value="13">heart of Jack</option>
+            <option value="9">heart of queen</option>
+            <option value="5">heart of king</option>
+            <option value="1">heart of Ace</option>
+            <option value="18">club of 2</option>
+            <option value="22">club of 3</option>
+            <option value="26">club of 4</option>
+            <option value="30">club of 5</option>
+            <option value="34">club of 6</option>
+            <option value="38">club of 7</option>
+            <option value="42">club of 8</option>
+            <option value="46">club of 9</option>
+            <option value="50">club of 10</option>
+            <option value="14">club of Jack</option>
+            <option value="10">club of queen</option>
+            <option value="6">club of king</option>
+            <option value="2">club of Ace</option>
+            <option value="19">spade of 2</option>
+            <option value="23">spade of 3</option>
+            <option value="27">spade of 4</option>
+            <option value="31">spade of 5</option>
+            <option value="35">spade of 6</option>
+            <option value="39">spade of 7</option>
+            <option value="43">spade of 8</option>
+            <option value="47">spade of 9</option>
+            <option value="51">spade of 10</option>
+            <option value="15">spade of Jack</option>
+            <option value="11">spade of queen</option>
+            <option value="7">spade of king</option>
+            <option value="3">spade of Ace</option>
+            <option value="20">diamond of 2</option>
+            <option value="24">diamond of 3</option>
+            <option value="28">diamond of 4</option>
+            <option value="32">diamond of 5</option>
+            <option value="36">diamond of 6</option>
+            <option value="40">diamond of 7</option>
+            <option value="44">diamond of 8</option>
+            <option value="48">diamond of 9</option>
+            <option value="52">diamond of 10</option>
+            <option value="16">diamond of Jack</option>
+            <option value="12">diamond of queen</option>
+            <option value="8">diamond of king</option>
+            <option value="4">diamond of Ace</option>
+            <!-- <option value="jo1">joker</option>
+            <option value="jo2">joker</option> -->
+        </select>
+
+        
+        <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+
+
+    </form> 
+
+    <p>Output:</p>
+    <p id = 'output'></p>
+    <py-script>
+        lis = []
+        def sub(*args,**kwargs):
+            result_place = Element('output')
+            a = Element('firstcard').value
+            lis.append({a})
+            b = Element('secondcard').value
+            lis.append(b)
+            c = Element('thirdcard').value
+            lis.append(c)
+            d = Element('forthcard').value
+            lis.append(d)
+            e = Element('fifthcard').value
+            lis.append(e)
+            result_place.write(f"{a} {b} {c} {d} {e} is a good human from")
+            
+        print(lis)
+    </py-script>
+
+</body>
+</html>
+
